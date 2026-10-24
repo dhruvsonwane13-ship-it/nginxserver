@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive streaming landing page demo built with HTML, CSS and JavaScript.">
+  <title>StreamFlix — Movies & Shows</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <header class="topbar">
+      <a class="logo" href="#" aria-label="StreamFlix home">STREAM<span>FLIX</span></a>
+      <div class="header-actions">
+        <select class="language" aria-label="Choose language">
+          <option>English</option><option>हिन्दी</option>
+        </select>
+        <a class="sign-in" href="#browse">Explore</a>
+      </div>
+    </header>
+
+    <main class="hero-content">
+      <p class="eyebrow">YOUR NEXT FAVORITE STORY STARTS HERE</p>
+      <h1>Unlimited stories.<br><span>One destination.</span></h1>
+      <p class="hero-copy">Discover movies, series, thrillers, comedies and more. Your next movie night starts now.</p>
+      <form class="email-form" id="email-form">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Email address" required>
+        <button type="submit">Get Started <span aria-hidden="true">›</span></button>
+      </form>
+      <p class="form-message" id="form-message" aria-live="polite"></p>
+    </main>
+    <div class="hero-shade"></div>
+  </div>
+
+  <main id="browse" class="content">
+    <section class="trending section">
+      <div class="section-heading">
+        <div><p class="eyebrow">PICK YOUR NEXT BINGE</p><h2>Trending now</h2></div>
+        <div class="slider-controls">
+          <button id="prev" aria-label="Scroll posters left">‹</button>
+          <button id="next" aria-label="Scroll posters right">›</button>
+        </div>
+      </div>
+      <div class="poster-row" id="poster-row">
+        <article class="poster poster-one"><span class="rank">01</span><div class="poster-label"><small>SCI-FI SERIES</small><h3>Beyond Earth</h3></div></article>
+        <article class="poster poster-two"><span class="rank">02</span><div class="poster-label"><small>CRIME THRILLER</small><h3>Dark City</h3></div></article>
+        <article class="poster poster-three"><span class="rank">03</span><div class="poster-label"><small>ADVENTURE</small><h3>Wild Horizon</h3></div></article>
+        <article class="poster poster-four"><span class="rank">04</span><div class="poster-label"><small>MYSTERY</small><h3>The Last Clue</h3></div></article>
+        <article class="poster poster-five"><span class="rank">05</span><div class="poster-label"><small>DRAMA</small><h3>Golden Hour</h3></div></article>
+        <article class="poster poster-six"><span class="rank">06</span><div class="poster-label"><small>ACTION</small><h3>Redline</h3></div></article>
+      </div>
+    </section>
+
+    <section class="features section">
+      <div class="section-heading"><div><p class="eyebrow">MADE FOR YOUR SCREEN</p><h2>More reasons to join</h2></div></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">▣</div><h3>Enjoy on your TV</h3><p>Watch on smart TVs, laptops, tablets and phones.</p></article>
+        <article class="feature-card"><div class="feature-icon">↓</div><h3>Take it anywhere</h3><p>Plan your next watchlist for your next movie night.</p></article>
+        <article class="feature-card"><div class="feature-icon">✦</div><h3>Stories for everyone</h3><p>Explore a mix of genres and discover something new.</p></article>
+        <article class="feature-card"><div class="feature-icon">⌁</div><h3>Easy to explore</h3><p>Browse a clean, responsive catalogue on any device.</p></article>
+      </div>
+    </section>
+
+    <section class="faq section">
+      <p class="eyebrow">GOOD TO KNOW</p><h2>Frequently asked questions</h2>
+      <details><summary>What is StreamFlix? <span>+</span></summary><p>StreamFlix is a demo streaming-style landing page made for a front-end portfolio project.</p></details>
+      <details><summary>Can I watch movies on this demo? <span>+</span></summary><p>No. This is a static front-end demo and does not stream movies or collect account information.</p></details>
+      <details><summary>Can I customize this website? <span>+</span></summary><p>Yes. Edit index.html, style.css and script.js to make it your own.</p></details>
+    </section>
+
+    <footer class="footer">
+      <a class="logo footer-logo" href="#">STREAM<span>FLIX</span></a>
+      <p>Portfolio demo • Built with HTML, CSS & JavaScript</p>
+      <p class="disclaimer">Independent demo project. Not affiliated with Netflix.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

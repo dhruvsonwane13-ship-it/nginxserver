@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap');
+
+:root{--red:#e50914;--bg:#08090d;--panel:#171923;--muted:#c4c6cf;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:'DM Sans',Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+.hero{min-height:690px;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(5,7,14,.96) 0%,rgba(5,7,14,.78) 48%,rgba(5,7,14,.28) 100%),linear-gradient(0deg,#08090d 0%,transparent 38%),url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=2000&q=85') center/cover}
+.topbar{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:28px clamp(22px,6vw,90px)}
+.logo{font-family:Montserrat,sans-serif;font-size:clamp(22px,3vw,32px);font-weight:900;letter-spacing:-1.5px;color:var(--red)}
+.logo span{color:white}
+.header-actions{display:flex;gap:12px;align-items:center}
+.language{background:#15151b;color:white;border:1px solid #777;border-radius:5px;padding:9px 12px}
+.sign-in{background:var(--red);padding:10px 18px;border-radius:5px;font-weight:700}
+.hero-content{position:relative;z-index:1;max-width:780px;padding:95px clamp(22px,8vw,125px) 120px}
+.eyebrow{color:#ff6970;font-size:11px;font-weight:800;letter-spacing:2.2px;margin:0 0 13px}
+h1,h2,h3,p{margin-top:0}
+h1{font-family:Montserrat,sans-serif;font-size:clamp(42px,6.5vw,78px);line-height:1.06;letter-spacing:-3px;margin-bottom:22px}
+h1 span{color:#ff5963}
+.hero-copy{font-size:clamp(16px,2vw,19px);line-height:1.7;color:#e1e1e6;max-width:560px;margin-bottom:28px}
+.email-form{display:flex;gap:10px;max-width:570px}
+.email-form input{flex:1;min-width:0;background:rgba(15,17,24,.86);border:1px solid #85858e;color:white;padding:17px;border-radius:5px;outline:none}
+.email-form input:focus{border-color:white}
+.email-form button{border:0;background:var(--red);color:white;padding:0 22px;border-radius:5px;font-size:17px;font-weight:800;cursor:pointer;white-space:nowrap}
+.email-form button:hover,.sign-in:hover{background:#bb0710}
+.email-form button span{font-size:26px;vertical-align:-2px;margin-left:5px}
+.form-message{font-size:13px;color:#baf7d0;margin-top:12px;min-height:16px}
+.content{max-width:1400px;margin:auto;padding:0 clamp(20px,5vw,72px)}
+.section{padding:48px 0}
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}
+h2{font-family:Montserrat,sans-serif;font-size:clamp(25px,3vw,35px);margin-bottom:0;letter-spacing:-1px}
+.slider-controls{display:flex;gap:8px}
+.slider-controls button{border:1px solid #393b48;background:#191b25;color:white;width:38px;height:38px;border-radius:50%;font-size:26px;cursor:pointer}
+.slider-controls button:hover{background:var(--red)}
+.poster-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(160px,1fr);grid-auto-columns:clamp(160px,19%,230px);gap:17px;overflow-x:auto;scrollbar-width:none;padding:4px 2px 16px;scroll-snap-type:x mandatory}
+.poster-row::-webkit-scrollbar{display:none}
+.poster{position:relative;min-height:310px;border-radius:12px;overflow:hidden;isolation:isolate;display:flex;align-items:end;scroll-snap-align:start;background-size:cover;background-position:center;transition:transform .25s ease}
+.poster:hover{transform:translateY(-7px)}
+.poster:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,5,10,.96),transparent 75%);z-index:-1}
+.poster-one{background-image:linear-gradient(135deg,#132b50,#4a71a5 45%,#e1a8ba)}
+.poster-two{background-image:linear-gradient(135deg,#1c202b,#4e1c29 50%,#e79a58)}
+.poster-three{background-image:linear-gradient(135deg,#1c514e,#8ebc85 48%,#e8c98c)}
+.poster-four{background-image:linear-gradient(135deg,#171b31,#554d87 50%,#d9a3bd)}
+.poster-five{background-image:linear-gradient(135deg,#43251c,#b76e3c 50%,#e7c77e)}
+.poster-six{background-image:linear-gradient(135deg,#3c1018,#ba2635 55%,#f1a04c)}
+.rank{position:absolute;top:10px;left:13px;font-family:Montserrat,sans-serif;font-size:46px;font-weight:900;color:rgba(255,255,255,.78);text-shadow:0 3px 14px #000}
+.poster-label{padding:20px 17px;width:100%}
+.poster-label small{font-size:9px;letter-spacing:1.5px;color:#ffb3b7;font-weight:800}
+.poster-label h3{font-family:Montserrat,sans-serif;font-size:21px;margin:7px 0 0}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:24px}
+.feature-card{background:linear-gradient(145deg,#1d2032,#17131e);border:1px solid #2c2c3b;border-radius:14px;padding:24px;min-height:205px}
+.feature-icon{font-size:31px;color:#ff6871;margin-bottom:22px}
+.feature-card h3{font-size:18px;margin-bottom:9px}
+.feature-card p,.faq details p{color:var(--muted);line-height:1.6;font-size:14px;margin-bottom:0}
+.faq{max-width:900px;margin:0 auto}
+.faq h2{margin-bottom:25px}
+.faq details{background:#202127;margin:9px 0;padding:0 22px}
+.faq summary{cursor:pointer;list-style:none;padding:22px 0;font-size:18px;display:flex;justify-content:space-between;gap:15px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary span{font-size:25px;font-weight:300}
+.faq details[open] summary span{transform:rotate(45deg)}
+.faq details p{padding:0 0 22px;font-size:15px}
+.footer{border-top:1px solid #272832;margin-top:30px;padding:34px 0 45px;color:#9ea0ac;font-size:13px}
+.footer-logo{display:inline-block;font-size:23px;margin-bottom:16px}
+.disclaimer{font-size:12px;color:#777985;margin-bottom:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:850px){.feature-grid{grid-template-columns:repeat(2,1fr)}.hero{min-height:650px;background-position:58% center}.hero-content{padding-top:90px}}
+@media(max-width:520px){.topbar{padding:20px}.language{max-width:90px}.hero-content{padding:75px 22px 90px}h1{letter-spacing:-2px}.email-form{flex-direction:column}.email-form button{padding:14px}.section{padding:35px 0}.poster-row{grid-auto-columns:65%}.poster{min-height:285px}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:unset}.section-heading{align-items:center}.footer{margin-top:10px}}
